@@ -1,11 +1,11 @@
-from database import base
+from database import Base
 from datetime import datetime
 from sqlalchemy import Integer, String, Numeric, DateTime
 from sqlalchemy.orm import mapped_column
 from sqlalchemy.orm import relationship
 
 # Users database model
-class Users(base):
+class Users(Base):
     __tablename__ = "users"
     id = mapped_column(Integer, primary_key=True, unique=True)
     username = mapped_column(String(50), nullable=False, unique=True)
