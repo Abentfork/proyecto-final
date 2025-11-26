@@ -1,12 +1,12 @@
 from sqlalchemy import String, DateTime, Integer, Numeric
 from datetime import datetime
-from database import Base
+from database import base
 from sqlalchemy.orm import mapped_column
 from sqlalchemy import ForeignKey
 from sqlalchemy.orm import relationship
 
 # Payments database model
-class Payments(Base):
+class Payments(base):
     __tablename__ = "payments"
     id = mapped_column(Integer, primary_key=True, unique=True)
     user_id = mapped_column(Integer, ForeignKey("users.id"), nullable=False)

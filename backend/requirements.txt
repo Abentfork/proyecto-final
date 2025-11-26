@@ -10,6 +10,8 @@ greenlet==3.2.4
 h11==0.16.0
 httptools==0.7.1
 idna==3.11
+psycopg-binary==3.2.13
+psycopg2-binary==2.9.11
 pydantic==2.12.4
 pydantic_core==2.41.5
 python-dotenv==1.2.1
