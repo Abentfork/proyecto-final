@@ -1,4 +1,7 @@
-from models import bet, game, payment, user
+from models.user import Users
+from models.bet import Bets
+from models.game import Games
+from models.payment import Payments
 from database import Base, engine
 
 
